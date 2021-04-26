@@ -11,9 +11,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.whoareyou_layout);
+        setContentView(R.layout.borrower_main);
 
-        imageView = (ImageView) findViewById(R.id.imageView);
-        imageView.setImageResource(R.drawable.instrumental);
+        //imageView = (ImageView) findViewById(R.id.imageView);
+        //imageView.setImageResource(R.drawable.instrumental);
     }
 }
