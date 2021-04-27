@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/back_arrow_icon_round" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="545dp"
+            android:orientation="vertical">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login7"
+                android:layout_width="166dp"
+                android:layout_height="97dp"
+                android:layout_weight="1"
+                android:background="@drawable/profile_icon"
+                android:fontFamily="@font/actor"
+                android:stateListAnimator="@android:anim/fade_in"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_login2" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="180dp"
+                android:layout_height="99dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/globe_icon_foreground" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="179dp"
+                android:layout_height="99dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/list_icon_foreground" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login6"
+                android:layout_width="171dp"
+                android:layout_height="99dp"
+                android:layout_weight="1"
+                android:background="@drawable/chat_icon"
+                android:fontFamily="@font/actor"
+                android:stateListAnimator="@android:anim/fade_in"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_login2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

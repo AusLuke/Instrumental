@@ -5,15 +5,57 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MapStyleOptions;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
+
+    private GoogleMap mMap;
 
     private ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.borrower_main);
+        setContentView(R.layout.borrower_alternate);
 
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
         //imageView = (ImageView) findViewById(R.id.imageView);
         //imageView.setImageResource(R.drawable.instrumental);
     }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
+
+        LatLng nycCenter = new LatLng(40.758, -73.982);
+        LatLng nycMarker1 = new LatLng(40.762, -73.981);
+        LatLng nycMarker2 = new LatLng(40.759, -73.976);
+        LatLng nycMarker3 = new LatLng(40.756, -73.980);
+        LatLng nycMarker4 = new LatLng(40.758, -73.983);
+        LatLng nycMarker5 = new LatLng(40.761, -73.985);
+        mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json));
+        mMap.addMarker(new MarkerOptions()
+                .position(nycMarker1)
+                .title("Grand Piano"));
+        mMap.addMarker(new MarkerOptions()
+                .position(nycMarker2)
+                .title("Sitar"));
+        mMap.addMarker(new MarkerOptions()
+                .position(nycMarker3)
+                .title("Amplifier"));
+        mMap.addMarker(new MarkerOptions()
+                .position(nycMarker4)
+                .title("Drumset"));
+        mMap.addMarker(new MarkerOptions()
+                .position(nycMarker5)
+                .title("Clarinet"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(nycCenter, 15));
+    }
+
 }
