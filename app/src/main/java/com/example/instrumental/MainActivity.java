@@ -542,6 +542,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         });
 
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                setContentView(R.layout.lender_side);
+                setupLenderSide();
+            }
+        });
+
         button5.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
                 switch(pastView){
