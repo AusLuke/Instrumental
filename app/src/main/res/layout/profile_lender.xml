@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fefefe"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/yellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="160dp"
+            android:src="@drawable/inverted_round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
+
+        <ImageView
+            android:layout_width="137dp"
+            android:layout_height="132dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginBottom="330dp"
+            app:layout_constraintBottom_toTopOf="@id/textView24"
+            app:layout_constraintStart_toEndOf="@+id/profile_lender_back"
+            app:srcCompat="@drawable/bronaldo" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="256dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="144dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="4.5 Ratings"
+            android:textAlignment="center"
+            android:textColor="#32BF55"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="413dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="52dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Lended 13 instruments so far"
+            android:textAlignment="center"
+            android:textColor="#32BF55"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="170dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Ronaldo J."
+            android:textAlignment="center"
+            android:textColor="#B1BF32"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="170dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="New York, NY"
+            android:textAlignment="center"
+            android:textColor="#B1BF32"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/profile_lender_message"
+            android:layout_width="238dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/rounded_corner3"
+            android:fontFamily="@font/actor"
+            android:stateListAnimator="@android:anim/fade_in"
+            android:text="message"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <ImageButton
+            android:id="@+id/profile_lender_back"
+            android:layout_width="82dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            app:srcCompat="@drawable/back_icon2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

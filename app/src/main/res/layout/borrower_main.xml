@@ -23,10 +23,11 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/borrow_main_back"
                 android:layout_width="74dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/white"
                 app:srcCompat="@mipmap/back_arrow_icon_round" />
 
             <EditText
@@ -41,10 +42,11 @@
                 android:textAlignment="center" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/borrow_main_filter"
                 android:layout_width="78dp"
                 android:layout_height="88dp"
                 android:layout_weight="1"
+                android:background="@color/white"
                 app:srcCompat="@mipmap/filter_icon_background" />
 
         </LinearLayout>
@@ -234,7 +236,7 @@
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_login7"
+                android:id="@+id/borrow_main_profile"
                 android:layout_width="166dp"
                 android:layout_height="97dp"
                 android:layout_weight="1"
@@ -248,21 +250,23 @@
                 app:layout_constraintTop_toBottomOf="@+id/who_lend_button" />
 
             <ImageButton
-                android:id="@+id/imageButton7"
+                android:id="@+id/borrow_main_map"
                 android:layout_width="180dp"
                 android:layout_height="99dp"
                 android:layout_weight="1"
+                android:background="@color/white"
                 app:srcCompat="@mipmap/globe_icon_foreground" />
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/borrow_alt_list"
                 android:layout_width="179dp"
                 android:layout_height="99dp"
                 android:layout_weight="1"
+                android:background="#7ECC47"
                 app:srcCompat="@mipmap/list_icon_foreground" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_login6"
+                android:id="@+id/borrow_main_chat"
                 android:layout_width="171dp"
                 android:layout_height="99dp"
                 android:layout_weight="1"

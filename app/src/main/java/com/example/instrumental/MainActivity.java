@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -23,6 +24,17 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private Button button1;
     private Button button2;
+    //button3 is typically profile
+    private Button button3;
+    //button4 is typically chat
+    private Button button4;
+    //button 5 is typically back
+    private Button button5;
+
+    private ImageButton imgButton1;
+    private ImageButton imgButton2;
+    //imgButton3 is typically back button
+    private ImageButton imgButton3;
     private EditText editText1;
     private EditText editText2;
 
@@ -38,8 +50,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
-                EditText editText1 = (EditText) findViewById(R.id.login_username);
-                EditText editText2 = (EditText) findViewById(R.id.login_password);
+                editText1 = (EditText) findViewById(R.id.login_username);
+                editText2 = (EditText) findViewById(R.id.login_password);
 
                 String username = editText1.getText().toString().replace(" ", "");
                 String password = editText2.getText().toString().replace(" ", "");
@@ -49,6 +61,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 if(username.equals("admin") && password.equals("password")){
                     Toast.makeText(MainActivity.this, "Yes :) Logging you in", Toast.LENGTH_SHORT).show();
                     setContentView(R.layout.whoareyou_layout);
+                    editText1 = null;
+                    editText2 = null;
                     setupWhoareyou();
                 }else{
                     Toast.makeText(MainActivity.this, "Credentials incorrect. Hint, please try admin and password", Toast.LENGTH_LONG).show();
@@ -66,20 +80,115 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         System.out.println("got here");
         button1 = (Button) findViewById(R.id.who_borrow_button);
         button2 = (Button) findViewById(R.id.who_lend_button);
+        button3 = (Button) findViewById(R.id.who_profile);
+        button4 = (Button) findViewById(R.id.who_chat);
 
         button1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 setContentView(R.layout.borrower_main);
-                //setupBorrowerMain();
+                button1 = null;
+                button2 = null;
+                setupBorrowerMain();
             }
         });
 
         button2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 setContentView(R.layout.lender_side);
+                setupLenderSide();
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                // TODO waiting on pages
+                //setContentView(R.layout.profilescreen);
                 //setupLenderSide();
             }
         });
+
+        button4.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                // TODO waiting on pages
+                //setContentView(R.layout.chatscreen);
+                //setupLenderSide();
+            }
+        });
+    }
+
+    public void setupBorrowerMain(){
+        imgButton1 = (ImageButton) findViewById(R.id.borrow_main_map);
+        imgButton2 = (ImageButton) findViewById(R.id.borrow_main_filter);
+        imgButton3 = (ImageButton) findViewById(R.id.borrow_main_back);
+        button3 = (Button) findViewById(R.id.borrow_main_profile);
+        button4 = (Button) findViewById(R.id.borrow_main_chat);
+
+        imgButton1.setOnClickListener(new View.OnClickListener() {
+           public void onClick(View v){
+               setContentView(R.layout.borrower_alternate);
+               imgButton2 = null;
+               setupBorrowAlt();
+           }
+        });
+
+        imgButton2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                //TODO handle filter page
+            }
+        });
+
+        imgButton3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                setContentView(R.layout.whoareyou_layout);
+                imgButton1 = null;
+                imgButton2 = null;
+                imgButton3 = null;
+                setupWhoareyou();
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                //TODO send to profile
+            }
+        });
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                //TODO send to chat
+            }
+        });
+    }
+
+    public void setupBorrowAlt(){
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+        imgButton1 = (ImageButton) findViewById(R.id.borrow_alt_list);
+        imgButton3 = (ImageButton) findViewById(R.id.borrow_main_back);
+        button3 = (Button) findViewById(R.id.borrow_alt_profile);
+        button4 = (Button) findViewById(R.id.borrow_alt_chat);
+
+        imgButton1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                setContentView(R.layout.borrower_main);
+                setupBorrowerMain();
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+                setContentView(R.layout.whoareyou_layout);
+                imgButton1 = null;
+                imgButton3 = null;
+                setupWhoareyou();
+            }
+        });
+
+
+    }
+
+    public void setupLenderSide(){
+
     }
 
     @Override
