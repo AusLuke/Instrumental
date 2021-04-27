@@ -43,7 +43,7 @@
         android:layout_height="67dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/back_icon"
+        android:background="@drawable/back_icon2"
         android:fontFamily="@font/actor"
         android:stateListAnimator="@android:anim/fade_in"
         android:textColor="@android:color/white"
