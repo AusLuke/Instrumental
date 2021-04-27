@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_login"
+        android:id="@+id/who_borrow_button"
         android:layout_width="288dp"
         android:layout_height="94dp"
         android:layout_marginStart="72dp"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_login2"
+        android:id="@+id/who_lend_button"
         android:layout_width="288dp"
         android:layout_height="94dp"
         android:layout_marginStart="72dp"
@@ -83,7 +83,7 @@
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintTop_toBottomOf="@+id/who_borrow_button" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login3"
@@ -98,7 +98,7 @@
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login2" />
+        app:layout_constraintTop_toBottomOf="@+id/who_lend_button" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login4"
@@ -113,6 +113,6 @@
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login2" />
+        app:layout_constraintTop_toBottomOf="@+id/who_lend_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

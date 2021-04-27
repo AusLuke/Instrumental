@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/login_username"
         android:layout_width="319dp"
         android:layout_height="63dp"
         android:layout_marginStart="41dp"
@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine6"
+        android:id="@+id/login_password"
         android:layout_width="319dp"
         android:layout_height="0dp"
         android:layout_marginStart="41dp"
@@ -77,10 +77,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+        app:layout_constraintTop_toBottomOf="@+id/login_username" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login_register"
         android:layout_width="130dp"
         android:layout_height="71dp"
         android:layout_marginStart="41dp"
@@ -90,13 +90,13 @@
         android:backgroundTint="#C2DF33"
         android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/login_sign_in"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine6" />
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/login_sign_in"
         android:layout_width="130dp"
         android:layout_height="71dp"
         android:layout_marginTop="62dp"
@@ -107,7 +107,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine6" />
+        app:layout_constraintStart_toEndOf="@+id/login_register"
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
