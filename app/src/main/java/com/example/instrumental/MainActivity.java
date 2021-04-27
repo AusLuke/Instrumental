@@ -30,31 +30,32 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_layout);
+        setContentView(R.layout.profile_lender);
 
         // Remap buttons for each view change
         button1 = (Button) findViewById(R.id.login_register);
         button2 = (Button) findViewById(R.id.login_sign_in);
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v){
-                EditText editText1 = (EditText) findViewById(R.id.login_username);
-                EditText editText2 = (EditText) findViewById(R.id.login_password);
-
-                String username = editText1.getText().toString().replace(" ", "");
-                String password = editText2.getText().toString().replace(" ", "");
-
-                System.out.println(username);
-                System.out.println(password);
-                if(username.equals("admin") && password.equals("password")){
-                    Toast.makeText(MainActivity.this, "Yes :) Logging you in", Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.whoareyou_layout);
-                    setupWhoareyou();
-                }else{
-                    Toast.makeText(MainActivity.this, "Credentials incorrect. Hint, please try admin and password", Toast.LENGTH_LONG).show();
-                }
-            }
-        });
+//
+//
+//        button2.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v){
+//                EditText editText1 = (EditText) findViewById(R.id.login_username);
+//                EditText editText2 = (EditText) findViewById(R.id.login_password);
+//
+//                String username = editText1.getText().toString().replace(" ", "");
+//                String password = editText2.getText().toString().replace(" ", "");
+//
+//                System.out.println(username);
+//                System.out.println(password);
+//                if(username.equals("admin") && password.equals("password")){
+//                    Toast.makeText(MainActivity.this, "Yes :) Logging you in", Toast.LENGTH_SHORT).show();
+//                    setContentView(R.layout.whoareyou_layout);
+//                    setupWhoareyou();
+//                }else{
+//                    Toast.makeText(MainActivity.this, "Credentials incorrect. Hint, please try admin and password", Toast.LENGTH_LONG).show();
+//                }
+//            }
+//        });
 
         //SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         //mapFragment.getMapAsync(this);
