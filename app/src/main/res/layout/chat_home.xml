@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,33 +28,24 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
+                <ImageView
+                    android:id="@+id/imageView_button_to_chat"
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/jimmy" />
+
                 <TextView
                     android:id="@+id/textView"
-                    android:layout_width="wrap_content"
+                    android:layout_width="196dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_weight="6"
                     android:background="@drawable/rounded_corner_message"
                     android:padding="16dp"
-                    android:text="I'll be coming in by train at 10AM on June 10, is there any chance you can meet me there with the kit?"
+                    android:text="Jimmy: Great, I'll meet you at..."
                     android:textColor="#000" />
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="-15dp"
-                    android:layout_marginTop="6.5dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/arrow_bg1" />
-
-                <ImageView
-                    android:id="@+id/imageView_button_to_chat"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_weight="3"
-                    android:src="@drawable/jimmy" />
 
             </LinearLayout>
 
@@ -67,20 +59,11 @@
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="0dp"
                     android:layout_weight="3"
                     android:src="@drawable/ronaldo" />
-
-                <ImageView
-                    android:id="@+id/imageView1"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="-15dp"
-                    android:layout_marginTop="6.5dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/arrow_bg2" />
 
                 <TextView
                     android:id="@+id/textView1"
@@ -90,7 +73,7 @@
                     android:layout_weight="6"
                     android:background="@drawable/rounded_corner_message1"
                     android:padding="16dp"
-                    android:text="Hi there. I can do that, sounds good. You need everything, right? "
+                    android:text="Steve: It was great..."
                     android:textColor="#000" />
 
             </LinearLayout>
@@ -103,6 +86,14 @@
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal">
 
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/jimmy" />
+
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
@@ -111,25 +102,9 @@
                     android:layout_weight="6"
                     android:background="@drawable/rounded_corner_message"
                     android:padding="16dp"
-                    android:text="Yes, I need it all. Is it okay for you to transport it all and meet me there?"
+                    android:text="Ronaldo: Great doing business with..."
                     android:textColor="#000" />
 
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="-15dp"
-                    android:layout_marginTop="6.5dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/arrow_bg1" />
-
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_weight="3"
-                    android:src="@drawable/jimmy" />
 
             </LinearLayout>
 
@@ -144,19 +119,10 @@
                 <ImageView
                     android:id="@+id/imageView6"
                     android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="0dp"
                     android:layout_weight="3"
                     android:src="@drawable/ronaldo" />
-
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="-15dp"
-                    android:layout_marginTop="6.5dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/arrow_bg2" />
 
                 <TextView
                     android:id="@+id/textView5"
@@ -166,16 +132,34 @@
                     android:layout_weight="6"
                     android:background="@drawable/rounded_corner_message1"
                     android:padding="16dp"
-                    android:text="Great, i'll meet you at Grand Central at 10AM on June 10th with the kit. "
+                    android:text="John: Thank you for your busin..."
                     android:textColor="#000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="67dp"
+                android:layout_height="72dp"
+                android:layout_below="@+id/layout4"
+                android:layout_marginTop="30dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/chat_home_back"
+                    android:layout_width="50dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="3"
+                    android:background="#00FFFFFF"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView12"
+                    app:srcCompat="@drawable/back_icon2" />
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>
 
-    <include
-        layout="@layout/type_message_area"
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:gravity="bottom" />
 </LinearLayout>
