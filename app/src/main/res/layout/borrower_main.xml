@@ -63,10 +63,12 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/sitarOnClick"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_margin="10dp"
                     android:background="#656565"
+                    android:clickable="true"
                     android:gravity="start"
                     android:orientation="vertical"
                     android:outlineAmbientShadowColor="#AC3030"
@@ -97,10 +99,12 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/grandOnClick"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_margin="10dp"
                     android:background="#656565"
+                    android:clickable="true"
                     android:orientation="vertical">
 
                     <TextView
@@ -135,10 +139,12 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/drumsetOnClick"
                     android:layout_width="133dp"
                     android:layout_height="150dp"
                     android:layout_margin="5dp"
                     android:background="#656565"
+                    android:clickable="true"
                     android:orientation="vertical">
 
                     <TextView
@@ -166,10 +172,12 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ampOnClick"
                     android:layout_width="133dp"
                     android:layout_height="150dp"
                     android:layout_margin="5dp"
                     android:background="#656565"
+                    android:clickable="true"
                     android:orientation="vertical">
 
                     <TextView
@@ -197,10 +205,12 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/clarinetOnClick"
                     android:layout_width="133dp"
                     android:layout_height="150dp"
                     android:layout_margin="5dp"
                     android:background="#656565"
+                    android:clickable="true"
                     android:orientation="vertical">
 
                     <TextView

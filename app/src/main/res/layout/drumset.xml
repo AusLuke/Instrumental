@@ -8,7 +8,7 @@
     android:backgroundTint="#FFFFFF">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_back_d"
+        android:id="@+id/button_guitar_back"
         android:layout_width="72dp"
         android:layout_height="67dp"
         android:layout_marginStart="40dp"

@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/my_instruments2"
+        android:id="@+id/profile_layout_logout"
         android:layout_width="100dp"
         android:layout_height="52dp"
         android:layout_marginTop="4dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/my_instruments3"
+        android:id="@+id/profile_layout_save"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:layout_marginTop="14dp"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_login8"
+        android:id="@+id/profile_layout_back"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:layout_marginStart="24dp"
@@ -172,7 +172,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/my_instruments"
+        android:id="@+id/profile_layout_myinst"
         android:layout_width="320dp"
         android:layout_height="51dp"
         android:layout_marginStart="28dp"
@@ -261,7 +261,7 @@
         android:textColor="#FFFFFF"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/my_instruments" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_layout_myinst" />
 
     <Switch
         android:id="@+id/switch1"
@@ -269,7 +269,7 @@
         android:layout_height="37dp"
         android:layout_marginTop="12dp"
         app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/my_instruments" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_layout_myinst" />
 
     <RatingBar
         android:id="@+id/ratingBar"

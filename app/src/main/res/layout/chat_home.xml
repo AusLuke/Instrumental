@@ -23,9 +23,10 @@
             >
 
             <LinearLayout
-                android:id="@+id/layout1"
+                android:id="@+id/chat1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="true"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -50,11 +51,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/layout2"
+                android:id="@+id/chat2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/layout1"
+                android:layout_below="@+id/chat1"
                 android:layout_marginTop="30dp"
+                android:clickable="true"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -79,11 +81,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/layout3"
+                android:id="@+id/chat3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/layout2"
+                android:layout_below="@+id/chat2"
                 android:layout_marginTop="20dp"
+                android:clickable="true"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -109,11 +112,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/layout4"
+                android:id="@+id/chat4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/layout3"
+                android:layout_below="@+id/chat3"
                 android:layout_marginTop="30dp"
+                android:clickable="true"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -141,7 +145,7 @@
                 android:id="@+id/layout5"
                 android:layout_width="67dp"
                 android:layout_height="72dp"
-                android:layout_below="@+id/layout4"
+                android:layout_below="@+id/chat4"
                 android:layout_marginTop="30dp"
                 android:layout_weight="3"
                 android:orientation="horizontal">
