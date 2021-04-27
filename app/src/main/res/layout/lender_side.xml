@@ -40,7 +40,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_login3"
+        android:id="@+id/who_profile"
         android:layout_width="86dp"
         android:layout_height="82dp"
         android:layout_marginStart="60dp"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_login4"
+        android:id="@+id/who_chat"
         android:layout_width="95dp"
         android:layout_height="87dp"
         android:layout_marginTop="24dp"
